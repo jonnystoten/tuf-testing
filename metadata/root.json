@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
+   "sig": "3044022036e016ebf93d281659f324892b34df3bd854c917c09915c87688ae3db3eb2be9022042f26b2458467f186380c5c7002aff71f13671e26494a927dcbb99fb0ccee350"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-10-31T14:22:20Z",
+  "keys": {
+   "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEERet/8hs3WHIXyOXNzhLpTOz6DBx\n7zzHnenJgV/TB0dRMAx6j9UVRvlEkh5OcYuktNeqnLpHce1rLjLjpiRPVg==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@jonnystoten"
+   },
+   "abcd": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/jonnystoten/tuf-testing/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "abcd"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "abcd"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
