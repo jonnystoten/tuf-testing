@@ -20,14 +20,10 @@ jobs:
       actions: "write" # for dispatching publish workflow
 
     steps:
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-region: us-east-1
-          role-to-assume: arn:aws:iam::175142243308:role/tuf-testing-online-key
-
       - id: online-sign
-        uses: jonnystoten/tuf-on-ci/actions/online-sign@bc3845d41d71f6fa320a96ab6a308e4ca7346cef
+        uses: jonnystoten/tuf-on-ci/actions/online-sign@485b18a48978bca91d321a2562f3cfa2b5daf32e
         with:
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+          aws_role_to_assume: ${{ vars.AWS_ROLE_TO_ASSUME }}
+          aws_region: ${{ vars.AWS_REGION }}
