@@ -27,7 +27,7 @@ jobs:
           role-to-assume: arn:aws:iam::175142243308:role/tuf-testing-online-key
 
       - id: online-sign
-        uses: theupdateframework/tuf-on-ci/actions/online-sign@6d32b9491bcccdf75b64f4c779f0366ad0e35b7e # v0.1.0
+        uses: jonnystoten/tuf-on-ci/actions/online-sign@bc3845d41d71f6fa320a96ab6a308e4ca7346cef
         with:
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
