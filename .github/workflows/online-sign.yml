@@ -4,10 +4,10 @@ permissions: {}
 
 on:
   schedule:
-    - cron:  '17 1,7,13,19 * * *'
+    - cron: "17 1,7,13,19 * * *"
   push:
-    branches: [ main ]
-    paths: ['metadata/**']
+    branches: [main]
+    paths: ["metadata/**"]
   workflow_dispatch:
 
 jobs:
@@ -15,11 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: 'write' # for OIDC identity access
-      contents: 'write' # for commiting snapshot/timestamp changes
-      actions: 'write' # for dispatching publish workflow
+      id-token: "write" # for OIDC identity access
+      contents: "write" # for commiting snapshot/timestamp changes
+      actions: "write" # for dispatching publish workflow
 
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::175142243308:role/tuf-testing-online-key
+
       - id: online-sign
         uses: theupdateframework/tuf-on-ci/actions/online-sign@6d32b9491bcccdf75b64f4c779f0366ad0e35b7e # v0.1.0
         with:
