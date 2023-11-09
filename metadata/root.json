@@ -3,12 +3,16 @@
   {
    "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
    "sig": ""
+  },
+  {
+   "keyid": "e642e70171046d6d97efdea76792c373d863c55c054c4287c999c62c6011120f",
+   "sig": "304502210095e4cc9644b7442b0e8a01cedc8ca043b10d262b8c2f03b766d4912778c0319a022046c0908fe0fc82d550c18ca860382720664de2bd7cc77fccbe21f6a5fc51b565"
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-11-08T16:36:59Z",
+  "expires": "2024-11-08T16:41:20Z",
   "keys": {
    "198f00ff96ea7cbfa7eac480cc9bfc43ce13bb434b901011ab777856533997d3": {
     "keytype": "ecdsa",
@@ -25,12 +29,21 @@
     },
     "scheme": "ecdsa-sha2-nistp256",
     "x-tuf-on-ci-keyowner": "@jonnystoten"
+   },
+   "e642e70171046d6d97efdea76792c373d863c55c054c4287c999c62c6011120f": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEuMtH9o0x/EHc/Rzoco4RyqmR7UwA\n0sHROw/79CMdbPh3/egmMxci3N+dJl6Re/cNkqR9eQy7joULS2K9Oxgxww==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@mrjoelkamp"
    }
   },
   "roles": {
    "root": {
     "keyids": [
-     "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de"
+     "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
+     "e642e70171046d6d97efdea76792c373d863c55c054c4287c999c62c6011120f"
     ],
     "threshold": 2
    },
