@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - id: online-sign
-        uses: jonnystoten/tuf-on-ci/actions/online-sign@485b18a48978bca91d321a2562f3cfa2b5daf32e
+        uses: jonnystoten/tuf-on-ci/actions/online-sign@f6d0814b8f1718f3432f39f5cb9628f0e7284c1d
         with:
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
