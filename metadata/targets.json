@@ -2,19 +2,33 @@
  "signatures": [
   {
    "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
-   "sig": "3045022100fe5061813ca6c22a6e5f7041642dfd002764190e8823f81ade5aa0709d601635022077c39ed330a59526832aea2a9677ff0de99a0d1f7a84d6eb3897958276f7f3b7"
+   "sig": ""
   },
   {
    "keyid": "e642e70171046d6d97efdea76792c373d863c55c054c4287c999c62c6011120f",
-   "sig": "30440220053dcac586816d8a5a1414764f5d7340df7002f5e4ed2efaabd63a5cfecf6cc1022066ae6329995e405d100c486e70c9d0efc1c9e64afb65841790066881da363a5e"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2024-10-31T14:22:20Z",
+  "delegations": {
+   "keys": {},
+   "roles": [
+    {
+     "keyids": [],
+     "name": "opkl",
+     "paths": [
+      "opkl/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2024-11-12T15:25:30Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 1,
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
