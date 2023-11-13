@@ -12,10 +12,21 @@
  "signed": {
   "_type": "targets",
   "delegations": {
-   "keys": {},
+   "keys": {
+    "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEERet/8hs3WHIXyOXNzhLpTOz6DBx\n7zzHnenJgV/TB0dRMAx6j9UVRvlEkh5OcYuktNeqnLpHce1rLjLjpiRPVg==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@ghost"
+    }
+   },
    "roles": [
     {
-     "keyids": [],
+     "keyids": [
+      "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de"
+     ],
      "name": "opkl",
      "paths": [
       "opkl/*"
@@ -25,7 +36,7 @@
     }
    ]
   },
-  "expires": "2024-11-12T15:25:30Z",
+  "expires": "2024-11-12T15:28:50Z",
   "spec_version": "1.0.31",
   "targets": {},
   "version": 2,
