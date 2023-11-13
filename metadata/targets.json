@@ -1,7 +1,7 @@
 {
  "signatures": [
   {
-   "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
+   "keyid": "11a7d0e8051a195702db6b5a8fe64e4f02c16f114f470a7e3a9d719cd2bee5b3",
    "sig": ""
   },
   {
@@ -13,10 +13,10 @@
   "_type": "targets",
   "delegations": {
    "keys": {
-    "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de": {
+    "11a7d0e8051a195702db6b5a8fe64e4f02c16f114f470a7e3a9d719cd2bee5b3": {
      "keytype": "ecdsa",
      "keyval": {
-      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEERet/8hs3WHIXyOXNzhLpTOz6DBx\n7zzHnenJgV/TB0dRMAx6j9UVRvlEkh5OcYuktNeqnLpHce1rLjLjpiRPVg==\n-----END PUBLIC KEY-----\n"
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZkCwQAwNDJYctm2t2LbiO49HxECx\ndo1gavpaT0C5qWrY6jDYNDJi/fmWh3JlsZIsbQXurnkujrPXX3/202cGyQ==\n-----END PUBLIC KEY-----\n"
      },
      "scheme": "ecdsa-sha2-nistp256",
      "x-tuf-on-ci-keyowner": "@ghost"
@@ -25,7 +25,7 @@
    "roles": [
     {
      "keyids": [
-      "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de"
+      "11a7d0e8051a195702db6b5a8fe64e4f02c16f114f470a7e3a9d719cd2bee5b3"
      ],
      "name": "opkl",
      "paths": [
