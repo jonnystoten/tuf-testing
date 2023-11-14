@@ -1,16 +1,12 @@
 {
  "signatures": [
   {
-   "keyid": "11a7d0e8051a195702db6b5a8fe64e4f02c16f114f470a7e3a9d719cd2bee5b3",
-   "sig": ""
+   "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
+   "sig": "30460221008b6583affc63263399839e6fff24e83bfd4875a4910b8985f05b3dc819deea58022100d8ae46ba552fa110391b1f5714c14fca05d2b9062acad15dc4b9e32ee27e7d78"
   },
   {
    "keyid": "e642e70171046d6d97efdea76792c373d863c55c054c4287c999c62c6011120f",
    "sig": ""
-  },
-  {
-   "keyid": "3da0404c531197e1e04622fb6ebcfe67ca462966c16115f856e8bba059b5f1de",
-   "sig": "3045022100fb7628eb2ed54a02365a0590d2770c5c2146e64efe4f3b7653d8fe3419c9117502206fcde1b0a0638f23ea05e0dee0adf287e58bd3c1e56ef9ab7fb956e6d655c326"
   }
  ],
  "signed": {
@@ -40,10 +36,17 @@
     }
    ]
   },
-  "expires": "2024-11-12T15:28:50Z",
+  "expires": "2024-11-13T15:03:05Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 2,
+  "targets": {
+   "test.txt": {
+    "hashes": {
+     "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03"
+    },
+    "length": 6
+   }
+  },
+  "version": 3,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
